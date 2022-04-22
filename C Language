@@ -1,0 +1,33 @@
+#include <stdio.h>
+void main()
+{
+float a,b,res=0;
+char n;
+printf("Enter the choice (+,-,*,/)");
+scanf("%c",&n);
+printf("Enter two no.");
+scanf("%f %f",&a,&b);
+    switch(n)
+    {
+        case'+':
+            res=a+b;
+            printf("sum=%f",res);
+            break;
+        case'-':
+            res=a-b;
+            printf("Sub=%f",res);
+            break;
+        case'*':
+            res=a*b;
+            printf("mul=%f",res);
+            break;
+        case'/':
+            res=a/b;
+            printf("div=%f",res);
+            break;
+        default:
+            printf("Not Valid ");
+            
+    }
+    
+}
